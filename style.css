@@ -1,0 +1,30 @@
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 2.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  height: 5px;
+  background: black;
+  border-radius: 5px;
+  margin: 3px 0px;
+  transform-origin: left;
+  transition: all 0.5s;
+}
+
+.hamburger:hover .top {
+  transform: rotate(45deg);
+}
+
+.hamburger:hover .middle {
+  opacity: 0;
+}
+
+.hamburger:hover .bottom {
+  transform: rotate(-45deg);
+}
